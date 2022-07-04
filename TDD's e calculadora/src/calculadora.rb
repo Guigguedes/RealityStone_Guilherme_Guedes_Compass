@@ -28,5 +28,9 @@ class Calculadora
         'Não é possível calcular a raiz quadrada de um número negativo!'
     end
 
+    def porcentagem(a, b)
+        a * b / 100
+    end
+
 
 end

@@ -119,4 +119,22 @@ describe('Calculadora') do
         expect(calculadora.potencia(0, 5)).to eq 0
     end
 
+                    #testando a porcentagem
+
+    it('Deve calcular a porcentagem de um número inteiro positivo') do
+        expect(calculadora.porcentagem(90, 10)).to eq 9
+    end
+
+    it('Deve calcular a porcentagem de um numero inteiro negativo') do
+        expect(calculadora.porcentagem(-80, 10)).to eq -8
+    end
+
+    it('Deve calcular a porcentagem de um numero decimal positivo') do
+        expect(calculadora.porcentagem(25.50, 20)).to eq 5.10
+    end
+
+    it('Deve calcular a porcentagem de um numero decimal negativo') do
+        expect(calculadora.porcentagem(30.9, 30)).to eq 9.27
+    end
+
 end
